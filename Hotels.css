@@ -1,0 +1,180 @@
+* { box-sizing: border-box; }
+body { background-color: lightslategray;
+       color: #0e0444;
+	   font-family: 'modern corsica'; 
+	   margin: 0;  
+}
+nav {
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+li:hover {
+    background-color: cornflowerblue;
+}
+.dropdownsearch{
+    position: relative;
+    display: inline-block;
+    z-index:1;
+    background-color: black;
+}
+.dropdown-contentsearch {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 253px;
+  height: auto;
+}
+.dropdownsearch:hover .dropdown-contentsearch {
+  display: block;
+}
+header { background-color: lightslategray; 
+        background-repeat: no-repeat;
+		background-size: 400%
+        color #1b2455;
+        text-align: center;
+        font-family: 'Monotype Corsiva regular';
+		height: 150px;
+        width: 100%;
+        padding-top: 5px;
+		padding-bottom: 5px;}
+header a { text-decoration: none; }
+header a:link       { color: #07011f; }
+header a:visited { color: #231814; }
+header a:hover     { color: #0c0661; }
+h1 { font-size: 4em;
+}
+h2 { color: #1b2455;
+	font-size: 2.5em; 
+    font-family: 'Monotype Corsiva regular';
+}
+h3, dt { color: #2e033b;
+		font-size: 1.5em; }
+p {font-size: 1.5em; 
+    font-family: 'Monotype Corsiva regular';
+}
+h4 { background-color: lightslategray;
+     font-size: 2em;
+     font-family: 'Monotype Corsiva regular';
+	 padding-left: .5em;
+	 padding-bottom: 0; 
+	 text-transform: uppercase; 
+	 border-bottom: 1px solid  #221811;
+	 clear: left;  
+} 
+nav {  text-align: center;
+	  font-size: 1.5em;
+}
+main { background-color: darkcyan;
+    width: 100%;
+    display: block;
+    padding: 0 0 2em 0;
+}
+h2, h3, h4, p, div, ul, dl { padding-left: 1em; padding-right: 1em;}
+main ul { padding-left: 2em; }
+.details { padding-left: 20%;
+           padding-right: 20%;
+           overflow: auto;
+}
+img { padding-left: 10px;
+      padding-right: 10px; 
+}
+#Vancouver { height: 700px;
+            background-image: url(Vancouver\ AdobeStock_163893719.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+}
+#Vancouver1 { height: 500px; 
+            background-image: url(Vancouver1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover; 
+}
+#Vancouver2 { height: 500px; 
+			background-image: url(Vancouver2.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%; 
+}
+#Vancouver3 { height: 500px; 
+	background-image: url(vancouver3.jpg), ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+#Montreal { height: 700px;
+	background-image: url(MontreaL\ AdobeStock_417734886.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#Montreal1 { height: 500px; 
+	background-image: url(Montreal1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+#Montreal2 { height: 500px; 
+	background-image: url(Montreal2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+#Montreal3 { height: 500px; 
+	background-image: url(montreal3.jpg), ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+#Toronto { height: 700px;
+	background-image: url(TorontoAdobeStock_398313775.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#Toronto1 { height: 500px; 
+	background-image: url(Toronto1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+#Toronto2 { height: 500px; 
+	background-image: url(Toronto2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+#Toronto3 { height: 500px; 
+background-image: url(Toronto3.jpg), ;
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+}
+#mobile { display: inline; }
+#desktop { display: none; }
+footer { background-color: #FFFFFF;
+         font-size: .60em;
+		 font-style: italic;
+		 text-align: center;
+		 padding-bottom: 1em;
+		 border-top: 2px solid #5e1a72;
+}
+table { margin: auto; 
+      width: 90%;
+	  border-spacing: 0;
+}
+th, td { padding: 10px; }
+tr:nth-of-type(odd) { background-color: darkcyan; }
+@media (min-width: 600px) { 
+		#flow { display: flex;
+			flex-direction: row; }    
+		#mobile   { display: none; }
+		#desktop { display: inline; }
+		.details { display: flex;
+				   flex-direction: row; }
+		h4 { margin-left: 10%; 
+		    margin-right: 10%; }
+}
+@media (min-width: 1024px) { 
+		@supports (display: grid) {
+		   header { grid-area: header; }	
+		   nav      { grid-area: nav; }
+		   main    { grid-area: main; }		
+		   footer  { grid-area: footer; }
+   }				
+}				
+				
+				
+				
+				
